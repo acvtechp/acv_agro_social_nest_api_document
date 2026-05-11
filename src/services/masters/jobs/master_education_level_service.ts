@@ -1,6 +1,6 @@
 // Imports
 import { apiGet, apiPost, apiPatch, apiDelete } from '../../../core/apiCall';
-import { CUBR, FBR, DBR } from '../../../core/BaseResponse';
+import { FBR, SBR } from '../../../core/BaseResponse';
 
 // Zod
 import { z } from 'zod';
@@ -114,20 +114,20 @@ export const newMasterEducationLevelPayload = (): MasterEducationLevelDTO => ({
 });
 
 // MasterEducationLevel APIs
-export const create_MasterEducationLevel = async (data: MasterEducationLevelDTO): Promise<CUBR> => {
-  return apiPost<CUBR, MasterEducationLevelDTO>(ENDPOINTS.create, data);
+export const create_MasterEducationLevel = async (data: MasterEducationLevelDTO): Promise<SBR> => {
+  return apiPost<SBR, MasterEducationLevelDTO>(ENDPOINTS.create, data);
 };
 
 export const find_MasterEducationLevel = async (data: MasterEducationLevelQueryDTO): Promise<FBR<MasterEducationLevel[]>> => {
   return apiPost<FBR<MasterEducationLevel[]>, MasterEducationLevelQueryDTO>(ENDPOINTS.find, data);
 };
 
-export const update_MasterEducationLevel = async (id: string, data: MasterEducationLevelDTO): Promise<CUBR> => {
-  return apiPatch<CUBR, MasterEducationLevelDTO>(ENDPOINTS.update(id), data);
+export const update_MasterEducationLevel = async (id: string, data: MasterEducationLevelDTO): Promise<SBR> => {
+  return apiPatch<SBR, MasterEducationLevelDTO>(ENDPOINTS.update(id), data);
 };
 
-export const delete_MasterEducationLevel = async (id: string): Promise<DBR> => {
-  return apiDelete<DBR>(ENDPOINTS.delete(id));
+export const delete_MasterEducationLevel = async (id: string): Promise<SBR> => {
+  return apiDelete<SBR>(ENDPOINTS.delete(id));
 };
 
 // MasterEducationLevel Cache

@@ -1,6 +1,6 @@
 {
   "name": "acv-agro-social-nest-api-document",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Reusable API SDK built with NestJS, Prisma, Axios, and Zod for ACV Agro Social frontend",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

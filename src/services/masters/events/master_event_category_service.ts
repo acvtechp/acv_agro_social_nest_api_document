@@ -1,6 +1,6 @@
 // Imports
 import { apiGet, apiPost, apiPatch, apiDelete } from '../../../core/apiCall';
-import { CUBR, FBR, DBR } from '../../../core/BaseResponse';
+import { FBR, SBR } from '../../../core/BaseResponse';
 
 // Zod
 import { z } from 'zod';
@@ -109,20 +109,20 @@ export const newMasterEventCategoryPayload = (): MasterEventCategoryDTO => ({
 });
 
 // MasterEventCategory APIs
-export const create_MasterEventCategory = async (data: MasterEventCategoryDTO): Promise<CUBR> => {
-  return apiPost<CUBR, MasterEventCategoryDTO>(ENDPOINTS.create, data);
+export const create_MasterEventCategory = async (data: MasterEventCategoryDTO): Promise<SBR> => {
+  return apiPost<SBR, MasterEventCategoryDTO>(ENDPOINTS.create, data);
 };
 
 export const find_MasterEventCategory = async (data: MasterEventCategoryQueryDTO): Promise<FBR<MasterEventCategory[]>> => {
   return apiPost<FBR<MasterEventCategory[]>, MasterEventCategoryQueryDTO>(ENDPOINTS.find, data);
 };
 
-export const update_MasterEventCategory = async (id: string, data: MasterEventCategoryDTO): Promise<CUBR> => {
-  return apiPatch<CUBR, MasterEventCategoryDTO>(ENDPOINTS.update(id), data);
+export const update_MasterEventCategory = async (id: string, data: MasterEventCategoryDTO): Promise<SBR> => {
+  return apiPatch<SBR, MasterEventCategoryDTO>(ENDPOINTS.update(id), data);
 };
 
-export const delete_MasterEventCategory = async (id: string): Promise<DBR> => {
-  return apiDelete<DBR>(ENDPOINTS.delete(id));
+export const delete_MasterEventCategory = async (id: string): Promise<SBR> => {
+  return apiDelete<SBR>(ENDPOINTS.delete(id));
 };
 
 // MasterEventCategory Cache
