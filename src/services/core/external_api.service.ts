@@ -1,14 +1,14 @@
 // Axios
-import { apiPost, apiPatch, apiDelete, apiGet } from 'src/core/apiCall';
-import { FBR, SBR } from 'src/core/BaseResponse';
+import { apiPost, apiPatch, apiDelete, apiGet } from '../../core/apiCall';
+import { FBR, SBR } from '../../core/BaseResponse';
 
 // Zod
 import { z } from 'zod';
-import { stringMandatory, stringOptional, enumOptional, numberMandatory, stringArrayMandatory, enumMandatory, multi_select_optional, enumArrayOptional, dateMandatory, getAllEnums } from 'src/zod_utils/zod_utils';
-import { BaseQuerySchema } from 'src/zod_utils/zod_base_schema';
+import { stringMandatory, stringOptional, enumOptional, numberMandatory, stringArrayMandatory, enumMandatory, multi_select_optional, enumArrayOptional, dateMandatory, getAllEnums } from '../../zod_utils/zod_utils';
+import { BaseQuerySchema } from '../../zod_utils/zod_base_schema';
 
 // Enums
-import { YesNo, Status, APIAuthType } from 'src/core/Enums';
+import { YesNo, Status, APIAuthType } from '../../core/EnumsDB';
 
 const URL = 'external_api';
 

@@ -1,7 +1,7 @@
 {
-  "name": "acv-agro-social-nest-api-document",
-  "version": "4.0.0",
-  "description": "Reusable API SDK built with NestJS, Prisma, Axios, and Zod for ACV Agro Social frontend",
+  "name": "acv_agro_social_nest_api_document",
+  "version": "1.0.0",
+  "description": "Reusable API SDK built with NestJS, Prisma, Axios, and Zod for NextJS frontends.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -9,14 +9,14 @@
     "dist"
   ],
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 tsup",
+    "build": "tsup",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "prepublishOnly": "npm run build"
   },
-  "repository": "https://github.com/acvtechp/acv_agro_social_nest_api_document",
-  "bugs": "https://github.com/acvtechp/acv_agro_social_nest_api_document/issues",
-  "homepage": "https://github.com/acvtechp/acv_agro_social_nest_api_document#readme",
+  "repository": "https://github.com/ramkitech/acv_agro_social_nest_api_document",
+  "bugs": "https://github.com/ramkitech/acv_agro_social_nest_api_document/issues",
+  "homepage": "https://github.com/ramkitech/acv_agro_social_nest_api_document#readme",
   "keywords": [
     "nestjs",
     "prisma",
@@ -29,7 +29,7 @@
     "react",
     "nextjs"
   ],
-  "author": "ACV TECH",
+  "author": "ACVTECH",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -68,10 +68,9 @@
   "type": "module",
   "dependencies": {
     "axios": "^1.11.0",
-    "zod": "^3.24.1"
+    "zod": "^4.3.6"
   },
   "devDependencies": {
-    "cross-env": "^10.1.0",
     "eslint": "^9.31.0",
     "eslint-config-next": "^15.4.3",
     "prettier": "^3.6.2",

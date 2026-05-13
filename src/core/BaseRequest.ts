@@ -1,4 +1,4 @@
-import { LoadChild, LoadParents, PAGING } from '../core/Enums';
+import { LoadChild, LoadParents, PAGING } from './EnumsBase';
 
 export interface BaseFindParams extends Record<string, unknown> {
   search?: string;

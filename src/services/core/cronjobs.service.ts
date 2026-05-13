@@ -1,14 +1,14 @@
 // Axios
-import { apiPost, apiGet } from 'src/core/apiCall';
-import { FBR, SBR } from 'src/core/BaseResponse';
+import { apiPost, apiGet } from '../../core/apiCall';
+import { FBR, SBR } from '../../core/BaseResponse';
 
 // Zod
 import { z } from 'zod';
-import { enumArrayOptional, multi_select_optional } from 'src/zod_utils/zod_utils';
-import { BaseQuerySchema } from 'src/zod_utils/zod_base_schema';
+import { enumArrayOptional, multi_select_optional } from '../../zod_utils/zod_utils';
+import { BaseQuerySchema } from '../../zod_utils/zod_base_schema';
 
 // Enums
-import { YesNo, Status, ExecutionStatus, RunType } from 'src/core/Enums';
+import { YesNo, Status, ExecutionStatus, RunType } from '../../core/EnumsDB';
 
 const URL = 'cronjobs';
 
